@@ -152,7 +152,6 @@ Splunk enables centralized visibility across an organization's endpoints by aggr
 
 Covers Splunk Enterprise installation, Universal Forwarder configuration on Windows 11, and Index/Sourcetype setup for Windows Security and Sysmon logs.
 
-[تصویر لازم: یک اسکرین‌شات ترکیبی/نماینده که Splunk Enterprise بعد از نصب بالا اومده رو نشون بده (مثلاً صفحه Home یا لیست Indexes ساخته‌شده مثل windows و sysmon_logs)]
 
 ![Splunk Deployment](images/splunk-deployment.png)
 
@@ -162,7 +161,6 @@ Covers Splunk Enterprise installation, Universal Forwarder configuration on Wind
 
 Covers basic searching, SPL syntax, Field/Time Range filtering, manual field extraction with `rex`, and Windows Security Event analysis.
 
-[تصویر لازم: یک اسکرین‌شات از یه سرچ SPL که فیلدهای استخراج‌شده با rex رو در قالب Table نشون بده (مثلاً همون کوئری Windows Security یا اولین کوئری موفق Event ID 11)]
 
 ![SPL Search and Field Extraction](images/spl-search-field-extraction.png)
 
@@ -172,7 +170,6 @@ Covers basic searching, SPL syntax, Field/Time Range filtering, manual field ext
 
 Covers analysis of Process Creation (Event ID 1), File Creation (Event ID 11), and Registry Modification (Event ID 13), including a manual Registry Run Key persistence test.
 
-[تصویر لازم: یک اسکرین‌شات که نتیجه تست Persistence روی Registry Run Key رو نشون بده (همون نتیجه‌ای که Image=powershell.exe و TargetObject شامل Run\TestPersistence بود) — نماینده کل تحلیل Sysmon]
 
 ![Sysmon Persistence Detection](images/sysmon-persistence-detection.png)
 
@@ -182,7 +179,6 @@ Covers analysis of Process Creation (Event ID 1), File Creation (Event ID 11), a
 
 Covers converting SPL queries into saved Reports and building a multi-panel Security Dashboard using Dashboard Studio.
 
-[تصویر لازم: اسکرین‌شات کامل از داشبورد Sysmon Security Overview شامل هر ۴ پنل (Line Chart, Bar Chart, Pie Chart, Single Value,Top 10 MITRE ATT&CK Techniques Detected)]
 
 ![Sysmon Security Dashboard](images/sysmon-security-dashboard.png)
 
@@ -192,7 +188,6 @@ Covers converting SPL queries into saved Reports and building a multi-panel Secu
 
 Covers configuring a scheduled Alert with Trigger Conditions for Registry Persistence detection, and verifying it under Triggered Alerts.
 
-[تصویر لازم: اسکرین‌شات از صفحه تنظیمات Alert شامل Trigger Condition و Trigger Actions (همون صفحه Registry Run Key Persistence Detected)]
 
 ![Alert Configuration](images/alert-configuration.png)
 
@@ -202,7 +197,6 @@ Covers configuring a scheduled Alert with Trigger Conditions for Registry Persis
 
 Covers simulating a 3-stage attack (Encoded PowerShell Execution → Registry Persistence → File Masquerading) and reconstructing it as a single Unified Timeline using `eval`, `case`, and `coalesce`.
 
-[تصویر لازم: اسکرین‌شات از نتیجه کوئری Unified Attack Timeline که هر ۳ مرحله حمله (Process Execution, Registry Persistence, File Creation) رو با هم به ترتیب زمانی نشون می‌ده]
 
 ![Attack Chain Timeline](images/attack-chain-timeline.png)
 
@@ -212,7 +206,6 @@ Covers simulating a 3-stage attack (Encoded PowerShell Execution → Registry Pe
 
 Covers parsing the Sysmon `RuleName` field to extract `technique_id`/`technique_name`, and validating that the simulated attack chain correctly maps to real MITRE ATT&CK techniques.
 
-[تصویر لازم: اسکرین‌شات از جدول stats روی technique_id و technique_name (جدول Top MITRE Techniques Detected) که کل کار جلسه ۱۴ رو نشون می‌ده]
 
 ![MITRE Mapping Table](images/mitre-mapping-table.png)
 
